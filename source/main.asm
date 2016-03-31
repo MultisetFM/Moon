@@ -11,7 +11,7 @@ section .bss
 
 section .text
 
-%include "system.inc"
+%include "system.asm"
 
 global _start
 
