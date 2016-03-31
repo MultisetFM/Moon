@@ -16,4 +16,9 @@ section .text
 global _start
 
 _start:
+	call socket_tcp_open
+	push rdi
+	mov rdi,rax
+	call close
+	pop rdi
 	jmp exit_success
